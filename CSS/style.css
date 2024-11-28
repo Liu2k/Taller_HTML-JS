@@ -1,0 +1,47 @@
+/* Estilos globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Geist Mono", monospace;
+}
+
+body {
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.block {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten */
+  gap: 15px; /* Espaciado entre los elementos */
+  padding: 20px;
+  background-color: lightgray;
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.flex-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px; /* Ancho fijo para todos los elementos */
+  height: 100px; /* Altura fija para todos los elementos */
+  background-color: skyblue;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px; /* Bordes redondeados */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.flex-item:hover {
+  transform: scale(1.1); /* Efecto de aumento al pasar el ratón */
+  background-color: deepskyblue; /* Cambia a un azul más oscuro */
+}
