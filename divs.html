@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de uso de div</title>
+    <style>
+        /* Estilos Generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        h1, h2 {
+            color: #007bff;
+        }
+
+        p {
+            font-size: 1em;
+            line-height: 1.6;
+        }
+
+        /* Estilos para los contenedores div */
+        .container {
+            margin: 20px 0;
+            padding: 20px;
+            background: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .container h1, .container h2 {
+            margin-top: 0;
+        }
+
+        .container:nth-child(odd) {
+            background: #e9f5ff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Primer contenedor -->
+    <div class="container">
+        <h1>Encabezado dentro de un div</h1>
+        <p>Este es un párrafo dentro de un div. Los elementos dentro de este contenedor están estilizados para destacar como un bloque separado.</p>
+    </div>
+    
+    <!-- Segundo contenedor -->
+    <div class="container">
+        <h2>Otro encabezado dentro de otro div</h2>
+        <p>Este es otro párrafo dentro de otro div. Puedes usar divs para organizar y agrupar contenido de manera efectiva.</p>
+    </div>
+</body>
+</html>
